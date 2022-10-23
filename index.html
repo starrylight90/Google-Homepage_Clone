@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <!-- This link tag is used to link html file with css file -->
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Google</title>
+<script> 
+
+function doodle() { 
+window.open("https://www.google.com/doodles/","_self");
+} 
+function blue(){
+var a = document.getElementById("sea").value;
+	   window.location = "https://www.google.com/search?q=" + a;
+}
+function signin(){
+window.open("https://accounts.google.com/v3/signin/identifier?dsh=S-804629996%3A1666511864791823&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWoNNtLnG9EaPiqJ7ba4x584aSUbAhHrMEV6aXCeNyIbhR0ugYixnmRss4CUiXQwKGLxDxSgsQ","_self");
+}
+
+</script>
+  </head>
+  <body>
+    <!--Nav tag is used here for navigation bar at top right corner -->
+    <nav>
+      <div id="navdiv">
+        <a href="https://www.gmail.com/" class="c" style=" color:black;">Gmail</a>
+        <a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl" class="c" style="color:black;">Images</a>
+        <div><i class="material-icons" >apps</i></div>
+        <div><button type="submit" name="button" onclick="signin()">Sign In</button></div>
+      </div>
+    </nav>
+    <!--End of navigation -->
+    <!-- Main body of google -->
+    <main>
+      <center>
+        <img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2018/10/24135409/google-2.jpg" width="20%" height="5%" id="googleimg">
+        <!-- Search bar -->
+        <div >
+          <div id="maindiv">
+<div class="valign-center">
+            <span><i class="material-icons">search</i></span></div>
+            <span id="inputspan"><input type="text" name="fname" id="sea" class="no-outline"></span> 
+
+            <span><img src="micro.png" align="bottom"></span>
+            <span><img src="camera.png"></span>
+
+          </div>
+        </div>
+        <!--Buttons -->
+        <section>
+          <div><button type="submit" style="background-color:#F8F9FA;" class="shadow" onclick="blue()"> Google Search </button></div>
+          <div><button style="background-color:#F8F9FA;" onclick="doodle()">I'm feeling lucky</button></div>
+        </section>
+        
+        <div id="Bottomdiv">
+          <span>Google offered in:</span>
+          <ul>
+            <li><a href="">हिन्दी</a></li>
+            <li><a href="">বাংলা</a></li>
+            <li><a href="">తెలుగు</a></li>
+            <li><a href="">मराठी</a></li>
+            <li><a href="">தமிழ்</a></li>
+            <li><a href="">ગુજરાતી</a></li>
+            <li><a href="">ಕನ್ನಡ</a></li>
+            <li><a href="">മലയാളം</a></li>
+            <li><a href="">ਪੰਜਾਬੀ</a></li>
+          </ul>
+        </div>
+      </center>
+    </main>
+
+
+  </body>
+</html>
